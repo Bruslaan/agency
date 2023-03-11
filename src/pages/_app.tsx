@@ -1,6 +1,9 @@
-import '@/styles/globals.css'
-import type { AppProps } from 'next/app'
+import "@/styles/globals.css";
+import "@/styles/cursor.css";
+import type { AppProps } from "next/app";
+import { useCursor } from "../custompackages/cursor";
 
 export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+  useCursor();
+  return <Component {...pageProps} />;
 }
